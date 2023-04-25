@@ -39,6 +39,7 @@
     "@storybook/testing-library": "^0.0.14-next.2",
     "eslint-plugin-storybook": "^0.6.11",
     "storybook": "^7.0.7",
-    "storybook-tailwind-dark-mode": "^1.0.22"
+    "storybook-tailwind-dark-mode": "^1.0.22",
+    "tsconfig-paths-webpack-plugin": "^4.0.1"
   }
 }

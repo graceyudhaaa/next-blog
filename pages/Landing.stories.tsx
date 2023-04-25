@@ -1,15 +1,14 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import {Button} from './Button';
+import Landing from './Landing';
 
 
-
-const meta: Meta<typeof Button> = {
+const meta: Meta<typeof Landing> = {
   /* 👇 The title prop is optional.
    * See https://storybook.js.org/docs/react/configure/overview#configure-story-loading
    * to learn how to generate automatic titles
    */
-  title: 'Component/Button',
-  component: Button,
+  title: 'Pages/Landing',
+  component: Landing,
   decorators: [
     (Story) => (
       <div style={{ fontFamily: 'Montserrat'}}>
@@ -21,10 +20,6 @@ const meta: Meta<typeof Button> = {
 };
 
 export default meta;
-type Story = StoryObj<typeof Button>;
+type Story = StoryObj<typeof Landing>;
 
-export const Primary: Story = {
-    args: {
-        label: 'Button',
-      },
-};
+export const Normal: Story = {};
