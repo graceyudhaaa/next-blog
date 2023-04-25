@@ -1,12 +1,34 @@
+import { Button } from "@/components/Button";
 import { Navbar } from "@/components/Navbar";
-import React from 'react'
+
+import React from "react";
 
 function Landing() {
   return (
-    <Navbar />
-  )
+    <main>
+      <Navbar />
+      <div className="h-screen flex flex-col items-center justify-center text-center">
+        <div className="shrink-0 flex-col gap-5">
+          <p className="text-chambray-950 text-4xl sm:text-5xl font-extrabold">
+            Hi! I’m Grace<span className="text-chambray-700">Yudha</span>
+          </p>
+          <p className="mt-5 text-sm md:text-lg">
+            i love to learn about technology,
+            <br />
+            especially python and data science stuff
+          </p>
+          <p className="mt-5 text-sm md:text-lg">
+            checkout my <span>blog</span> and the <span>project</span> that i
+            did
+          </p>
+          <Button className="mt-5" label="get in touch"></Button>
+        </div>
+      </div>
+      <p className="text-xs flex items-center justify-center">
+        2023 Grace Yudha Satriawan
+      </p>
+    </main>
+  );
 }
 
-export default Landing
-
-
+export default Landing;
