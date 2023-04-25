@@ -1,15 +1,15 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import {Navbar} from './Navbar';
+import {Button} from './Button';
 
 
 
-const meta: Meta<typeof Navbar> = {
+const meta: Meta<typeof Button> = {
   /* 👇 The title prop is optional.
    * See https://storybook.js.org/docs/react/configure/overview#configure-story-loading
    * to learn how to generate automatic titles
    */
-  title: 'Navbar',
-  component: Navbar,
+  title: 'Button',
+  component: Button,
   decorators: [
     (Story) => (
       <div style={{ fontFamily: 'Montserrat'}}>
@@ -21,6 +21,10 @@ const meta: Meta<typeof Navbar> = {
 };
 
 export default meta;
-type Story = StoryObj<typeof Navbar>;
+type Story = StoryObj<typeof Button>;
 
-export const Normal: Story = {};
+export const Primary: Story = {
+    args: {
+        label: 'Button',
+      },
+};

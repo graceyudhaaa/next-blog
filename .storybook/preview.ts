@@ -1,6 +1,9 @@
 import type { Preview } from "@storybook/react";
 import '../app/globals.css'
 
+export const globalTypes = {
+  darkMode: false,
+};
 
 const preview: Preview = {
   parameters: {
