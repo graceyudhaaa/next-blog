@@ -1,28 +1,22 @@
 'use client'
 
-import { ThemeProvider } from 'next-themes'
-import { useEffect, useState } from 'react'
+import { ReactNode } from "react";
 
-export function Providers({ children }: { children: React.ReactNode }) {
-  const [mounted, setMounted] = useState(false)
+import { ThemeProvider } from "next-themes";
 
-  if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-    localStorage.theme = 'dark'
-  } else {
-    localStorage.theme = 'light'
-  }
+// * Because layout.tsx is only rendered on the server-side, we can use the
+// * ThemeProvider and OtherProvider components directly in the RootLayout
+// * component. 
 
-  useEffect(() => {
-    setMounted(true)
-  }, [])
+// * This is not possible in the app.tsx file because it is rendered
+// * on both the server-side and the client-side.
 
-  if (!mounted) {
-    return null
-  }
-
+function Providers({ children }: { children: ReactNode }) {
   return (
-    <ThemeProvider enableSystem={true} attribute='class'>
+    <ThemeProvider attribute="class">
       {children}
     </ThemeProvider>
   )
 }
+
+export default Providers
