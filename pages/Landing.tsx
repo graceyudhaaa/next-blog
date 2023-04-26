@@ -5,7 +5,6 @@ import Navbar from "@/components/Navbar";
 function Landing() {
   return (
     <main>
-      <Navbar />
       <div className="h-screen flex flex-col items-center justify-center text-center">
         <div className="shrink-0 flex-col gap-5">
           <p className="text-chambray-950 dark:text-chambray-50 text-4xl sm:text-5xl font-extrabold">
