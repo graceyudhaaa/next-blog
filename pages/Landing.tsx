@@ -1,5 +1,6 @@
 import { Button } from "@/components/Button";
-import { Navbar } from "@/components/Navbar";
+import Navbar from "@/components/Navbar";
+
 
 function Landing() {
   return (
@@ -19,7 +20,7 @@ function Landing() {
             checkout my <span>blog</span> and the <span>project</span> that i
             did
           </p>
-          <Button className="mt-5" label="get in touch"></Button>
+          <Button className="mt-5" label="get in touch" ></Button>
         </div>
       </div>
       <p className="text-xs flex items-center justify-center dark:text-chambray-50">

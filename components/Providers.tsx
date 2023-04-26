@@ -13,7 +13,7 @@ import { ThemeProvider } from "next-themes";
 
 function Providers({ children }: { children: ReactNode }) {
   return (
-    <ThemeProvider attribute="class">
+    <ThemeProvider attribute="class" defaultTheme="light" storageKey='theme' enableSystem={false}>
       {children}
     </ThemeProvider>
   )

@@ -21,8 +21,8 @@ export default function RootLayout({
 }) {
   return (
     <ServerThemeProvider attribute="class">
-      <html suppressHydrationWarning lang="en" className={clsx(montserrat.variable, montserrat.className, 'dark:bg-chambray-950')}>
-        <body className="max-w-5xl mx-auto py-2">
+      <html suppressHydrationWarning lang="en" className={clsx(montserrat.variable, montserrat.className,)}>
+        <body className="max-w-5xl mx-auto py-2 dark:bg-chambray-950">
           <Providers>
             {children}
           </Providers>
