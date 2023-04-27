@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import {Navbar} from './Navbar';
+import Navbar from './Navbar';
 
 
 
@@ -12,7 +12,7 @@ const meta: Meta<typeof Navbar> = {
   component: Navbar,
   decorators: [
     (Story) => (
-      <div style={{ fontFamily: 'Montserrat'}}>
+      <div style={{ fontFamily: 'Montserrat' }}>
         {/* 👇 Decorators in Storybook also accept a function. Replace <Story/> with Story() to enable it  */}
         <Story />
       </div>
