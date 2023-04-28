@@ -6,7 +6,7 @@ function BlogPage() {
     return (
         <main>
             <div className="min-h-screen">
-                <div className="h-[200px] flex flex-col items-center justify-center text-center">
+                <div className="h-[200px] font-montserrat flex flex-col items-center justify-center text-center">
                     <div>
 
                         <p className="text-chambray-950 dark:text-chambray-50 text-4xl sm:text-5xl font-extrabold">

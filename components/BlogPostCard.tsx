@@ -19,11 +19,11 @@ function BlogPostCard(props: BlogPostCardProps) {
           <Image src={'/Vanilla-Foods-Enhanced-Mod-Thumbnail-.png'} alt='thumbnail' fill style={{ objectFit: "cover" }} />
         </div>
         <div className='w-full  p-3 flex-grow flex flex-col justify-between'>
-          <div className='mb-3'>
-            <div className='text-xl font-bold break-all line-clamp-3 hyphens-manual'>{props.title}</div>
-            <div className='mt-2 text-sm font-medium line-clamp-3 break-all hyphens-manual'>{props.desc}</div>
+          <div className='mb-5 text-chambray-950 dark:text-chambray-50'>
+            <div className='text-xl font-bold font-montserrat break-words line-clamp-3 hyphens-manual'>{props.title}</div>
+            <div className='mt-2 text-sm font-medium font-inter line-clamp-3 break-words hyphens-manual'>{props.desc}</div>
           </div>
-          <div className={clsx('flex flex-wrap gap-1', { "border-t pt-1": props.postTag })}>
+          <div className={clsx('flex flex-wrap gap-1', { "border-t pt-1 dark:border-chambray-800": props.postTag })}>
             {props.postTag && props.postTag.map((tag) => {
               return <Button variant='secondary' label={tag} small />
             })}

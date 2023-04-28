@@ -6,7 +6,7 @@ function Landing() {
     <main>
       <div className="h-screen flex flex-col items-center justify-center text-center">
         <div className="shrink-0 flex-col gap-5">
-          <p className="text-chambray-950 dark:text-chambray-50 text-4xl sm:text-5xl font-extrabold">
+          <p className="text-chambray-950 dark:text-chambray-50 text-4xl sm:text-5xl font-extrabold font-montserrat">
             Hi! I’m grace<span className="text-chambray-700 dark:text-chambray-300">yudha</span>
           </p>
           <p className="mt-5 text-sm md:text-lg dark:text-chambray-50">

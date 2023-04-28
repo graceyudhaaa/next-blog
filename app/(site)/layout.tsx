@@ -1,6 +1,6 @@
 import clsx from 'clsx'
 import '../globals.css'
-import { Montserrat } from 'next/font/google'
+import { Inter, Montserrat } from 'next/font/google'
 import Providers from '@/components/Providers'
 import { ServerThemeProvider } from 'next-themes'
 import Navbar from '@/components/Navbar'
@@ -9,6 +9,12 @@ const montserrat = Montserrat({
   subsets: ['latin'],
   variable: '--font-montserrat',
 })
+
+const inter = Inter({
+  subsets: ['latin'],
+  variable: '--font-inter',
+})
+
 
 export const metadata = {
   title: 'Create Next App',
@@ -22,7 +28,7 @@ export default function RootLayout({
 }) {
   return (
     <ServerThemeProvider attribute="class">
-      <html suppressHydrationWarning lang="en" className={clsx(montserrat.variable, montserrat.className,)}>
+      <html suppressHydrationWarning lang="en" className={clsx(montserrat.variable, montserrat.className, inter.variable, inter.className,)}>
         <body className="max-w-5xl mx-auto py-2 dark:bg-chambray-950">
           <Providers>
             <Navbar />
