@@ -1,5 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import Landing from './Landing';
+import Navbar from '@/components/Navbar';
 
 
 const meta: Meta<typeof Landing> = {
@@ -11,7 +12,8 @@ const meta: Meta<typeof Landing> = {
   component: Landing,
   decorators: [
     (Story) => (
-      <div style={{ fontFamily: 'Montserrat'}}>
+      <div style={{ fontFamily: 'Montserrat' }} className=' dark:bg-chambray-950'>
+        <Navbar />
         {/* 👇 Decorators in Storybook also accept a function. Replace <Story/> with Story() to enable it  */}
         <Story />
       </div>
