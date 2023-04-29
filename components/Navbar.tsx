@@ -32,7 +32,7 @@ function Navbar() {
   //   return null
   // }
 
-  return (<header className="font-montserrat bg-white dark:bg-chambray-950 py-2 px-2 z-50 w-full fixed ">
+  return (<header className="font-montserrat bg-white dark:bg-chambray-950 py-2 px-2 z-50 w-full sticky top-0 ">
     <div className="max-w-5xl mx-auto flex justify-between sm:items-center">
 
       <button className={clsx("py-2 px-2 font-medium font-montserrat duration-400 lowercase transition-all duration-500", "sm:hidden",)
@@ -63,7 +63,7 @@ function Navbar() {
         />
       </div>
     </div>
-    <div className={clsx('overscroll-none bg-black sm:hidden h-screen flex-1 w-screen absolute top-12 left-0 -z-20 transition-all duration-500', { ' opacity-50': open }, { 'opacity-0 ': !open })} onClick={() => { setOpen(!open) }} />
+    <div className={clsx('overscroll-none bg-black sm:hidden flex-1 w-screen absolute top-12 left-0 -z-20 transition-all origin-top duration-500', { 'opacity-50 h-screen': open }, { 'opacity-0 h-0': !open })} onClick={() => { setOpen(!open) }} />
   </header>)
 }
 
