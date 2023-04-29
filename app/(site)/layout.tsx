@@ -27,9 +27,9 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <ServerThemeProvider attribute="class">
+    <ServerThemeProvider attribute="class" disableTransitionOnChange={true}>
       <html suppressHydrationWarning lang="en" className={clsx(montserrat.variable, montserrat.className, inter.variable, inter.className,)}>
-        <body className="max-w-5xl mx-auto py-2 dark:bg-chambray-950">
+        <body className="max-w-5xl mx-auto dark:bg-chambray-950">
           <Providers>
             <Navbar />
             {children}
