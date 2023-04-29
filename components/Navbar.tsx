@@ -53,7 +53,7 @@ function Navbar() {
         <div className={clsx('flex flex-col divide-y divide-gray-200 dark:divide-chambray-800 sm:divide-y-0 sm:z-auto -z-10 dark:bg-chambray-950 bg-white sm:flex-row justify-center items-center sm:gap-5 absolute sm:static left-0 w-full transition-all duration-500', { 'top-12': open }, { 'top-[-500px]': !open })}>
           <Link href='/blog' className='group inline-flex justify-center items-center w-full py-3 sm:py-0'><span className="relative inline-block sm:z-10">blog <div className="bg-chambray-400 group-hover:w-full w-0 absolute bottom-0.5 h-[10%] z-[-1] transition-all duration-500" /></span></Link>
           <Link href='/project' className='group inline-flex justify-center items-center w-full py-3 sm:py-0'><span className="relative inline-block sm:z-10">project <div className="bg-chambray-400 group-hover:w-full w-0 absolute bottom-0.5 h-[10%] z-[-1] transition-all duration-500" /></span></Link>
-          <Link href='/contact' className='group inline-flex justify-center items-center w-full py-3 sm:py-0'><span className="relative inline-block sm:z-10">contact <div className="bg-chambray-400 group-hover:w-full w-0 absolute bottom-0.5 h-[10%] z-[-1] transition-all duration-500" /></span></Link>
+          <Link href='/about' className='group inline-flex justify-center items-center w-full py-3 sm:py-0'><span className="relative inline-block sm:z-10">about <div className="bg-chambray-400 group-hover:w-full w-0 absolute bottom-0.5 h-[10%] z-[-1] transition-all duration-500" /></span></Link>
         </div>
         <Button icon={theme === "light" ? <FaSun /> : <FaMoon />}
           variant="secondary"
