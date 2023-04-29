@@ -19,6 +19,7 @@
     "clsx": "^1.2.1",
     "eslint": "8.38.0",
     "eslint-config-next": "13.3.0",
+    "framer-motion": "^10.12.4",
     "next": "13.3.0",
     "next-sanity": "^4.1.7",
     "next-themes": "npm:@wits/next-themes@^0.2.16",
