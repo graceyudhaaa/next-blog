@@ -1,4 +1,5 @@
 import { Button } from "@/components/Button";
+import Link from "next/link";
 
 
 function Landing() {
@@ -15,7 +16,9 @@ function Landing() {
             especially python and data science stuff
           </p>
           <p className="mt-5 text-sm md:text-lg dark:text-chambray-50">
-            checkout my <span>blog</span> and the <span>project</span> that i
+            checkout my <span className="hover:before:block hover:before:bg-chambray-400 hover:before:inset-x-1 hover:before:bottom-0.5 before:w-0 hover:before:w-full hover:before:h-[25%] hover:before:left-0 hover:before:absolute relative inline-block transition-all duration-1000">
+              <span className="relative inline-block"><Link href='/blog'>blog</Link></span>
+            </span> and the <span>project</span> that i
             did
           </p>
           <Button className="mt-5" label="get in touch" ></Button>
