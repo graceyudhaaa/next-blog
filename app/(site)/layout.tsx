@@ -29,10 +29,12 @@ export default function RootLayout({
   return (
     <ServerThemeProvider attribute="class" disableTransitionOnChange={true}>
       <html suppressHydrationWarning lang="en" className={clsx(montserrat.variable, montserrat.className, inter.variable, inter.className,)}>
-        <body className="max-w-5xl mx-auto dark:bg-chambray-950">
+        <body className='dark:bg-chambray-950'>
           <Providers>
             <Navbar />
-            {children}
+            <div className="max-w-5xl mx-auto">
+              {children}
+            </div>
           </Providers>
         </body>
       </html>
