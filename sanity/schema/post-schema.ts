@@ -31,12 +31,33 @@ const post = {
       }]
     },
     {
+      name: 'description',
+      title: 'Description',
+      type: 'string'
+    },
+    {
+      title: 'Tags',
+      name: 'tags',
+      type: 'array',
+      of: [{ type: 'string' }],
+      options: {
+        layout: 'tags'
+      }
+    },
+    {
       name: 'content',
       title: 'Content',
       type: 'array',
       of: [
         { type: 'block', },
-        { type: 'image', },
+        {
+          type: 'image', fields: [{
+            name: 'alt',
+            title: 'Alt',
+            type: 'string',
+
+          }]
+        },
         { type: 'code', },
       ],
     },

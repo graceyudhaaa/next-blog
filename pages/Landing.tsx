@@ -15,10 +15,10 @@ function Landing() {
             <br />
             especially python and data science stuff
           </p>
-          <p className="mt-5 text-sm md:text-lg dark:text-chambray-50">
-            checkout my <Link href='/blog' className="group "><span className="relative font-bold inline-block z-10">blog <div className="bg-chambray-400 group-hover:w-full w-0 absolute bottom-0.5 h-[10%] z-[-1] transition-all duration-500" /></span></Link> and the <Link href='/project' className="group "><span className="relative font-bold inline-block z-10">project<div className="bg-chambray-400 group-hover:w-full w-0 absolute bottom-0.5 h-[10%] z-[-1] transition-all duration-500" /></span></Link> that i
+          <div className="mt-5 text-sm md:text-lg dark:text-chambray-50">
+            checkout my <div className="relative group font-bold inline-block z-10"><Link href='/blog' className="">blog</Link> <div className="bg-chambray-400 group-hover:w-full w-0 absolute bottom-0.5 h-[10%] z-[-1] transition-all duration-500" /></div> and the <div className="relative group font-bold inline-block z-10"><Link href='/project' className="">project</Link> <div className="bg-chambray-400 group-hover:w-full w-0 absolute bottom-0.5 h-[10%] z-[-1] transition-all duration-500" /></div> that i
             did
-          </p>
+          </div>
           <Link href='/about'><Button className="mt-5" label="get in touch" /></Link>
         </div>
       </div>
