@@ -4,6 +4,7 @@ import { Inter, Montserrat } from 'next/font/google'
 import Providers from '@/components/Providers'
 import { ServerThemeProvider } from 'next-themes'
 import Navbar from '@/components/Navbar'
+import PageWrapper from '@/components/PageWrapper'
 
 const montserrat = Montserrat({
   subsets: ['latin'],
