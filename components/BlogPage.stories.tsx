@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import BlogPage from './BlogPage';
+import BlogPage from '../pages/BlogPage';
 import Navbar from '@/components/Navbar';
 import { Button } from '@/components/Button';
 

@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import Landing from './Landing';
+import Landing from '../pages/Landing';
 import Navbar from '@/components/Navbar';
 
 
