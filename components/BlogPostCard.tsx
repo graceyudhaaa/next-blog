@@ -25,7 +25,7 @@ function BlogPostCard(props: BlogPostCardProps) {
           </div>
           <div className={clsx('flex flex-wrap gap-1', { "border-t pt-1 dark:border-chambray-800": props.postTag })}>
             {props.postTag && props.postTag.map((tag) => {
-              return <Button variant='secondary' label={tag} small />
+              return <Button key={tag} variant='secondary' label={tag} small />
             })}
           </div>
         </div>
