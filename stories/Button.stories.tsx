@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import { Button } from './Button';
+import { Button } from '../components/Button';
 import { FaEdit, FaMoon } from 'react-icons/fa'
 
 

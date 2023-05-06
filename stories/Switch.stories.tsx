@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import { Switch, SwitchProps } from './Switch';
+import { Switch, SwitchProps } from '../components/Switch';
 import { userEvent, within } from '@storybook/testing-library';
 
 
