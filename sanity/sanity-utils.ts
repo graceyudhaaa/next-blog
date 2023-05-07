@@ -2,7 +2,7 @@ import { createClient, groq } from "next-sanity"
 import { clientConfig } from "./config/client-config"
 import { Post } from "@/types/Post"
 
-export const getPosts = async () : Promise<Post[]> => {
+export const getPosts = async (): Promise<Post[]> => {
     return createClient(clientConfig).fetch(
         groq`*[_type == 'post' ]{
             _id,
@@ -11,6 +11,7 @@ export const getPosts = async () : Promise<Post[]> => {
             title,
             "slug": slug.current,
             "image": image.asset->url,
+            "tags": tags,
             content,
         }`
     )
