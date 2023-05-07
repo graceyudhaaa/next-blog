@@ -1,7 +1,8 @@
 import { codeInput } from '@sanity/code-input'
-import {defineConfig} from 'sanity'
-import {deskTool} from 'sanity/desk'
+import { defineConfig } from 'sanity'
+import { deskTool } from 'sanity/desk'
 import schemas from './sanity/schema'
+import { visionTool } from '@sanity/vision'
 
 
 const config = defineConfig({
@@ -10,7 +11,7 @@ const config = defineConfig({
     title: 'Dashboard',
     apiVersion: '2023-04-22',
     basePath: '/studio-dashboard',
-    plugins: [deskTool(), codeInput()],
+    plugins: [deskTool(), codeInput(), visionTool()],
     schema: { types: schemas }
 })
 
