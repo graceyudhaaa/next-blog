@@ -9,7 +9,7 @@ async function BlogPage() {
 
     return (
         <PageWrapper>
-            <main>
+            <main className="mb-60">
                 <div className="min-h-screen">
                     <div className="h-[250px] font-montserrat flex flex-col items-center justify-center gap-y-6 text-center">
                         <div>
@@ -33,9 +33,6 @@ async function BlogPage() {
                         ))}
                     </div>
                 </div>
-                <p className="mt-60 text-xs flex items-center justify-center dark:text-chambray-50">
-                    2023 Grace Yudha Satriawan
-                </p>
             </main>
         </PageWrapper>
     );

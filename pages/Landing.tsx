@@ -25,9 +25,6 @@ function Landing() {
             <Link href='/about'><Button className="mt-5" label="get in touch" /></Link>
           </div>
         </div>
-        <p className="text-xs flex items-center justify-center dark:text-chambray-50">
-          2023 Grace Yudha Satriawan
-        </p>
       </main>
     </PageWrapper>
   );

@@ -36,6 +36,9 @@ export default function RootLayout({
             <div className="max-w-5xl mx-auto">
               {children}
             </div>
+            <p className="text-xs flex items-center justify-center dark:text-chambray-50">
+              2023 Grace Yudha Satriawan
+            </p>
           </Providers>
         </body>
       </html>
