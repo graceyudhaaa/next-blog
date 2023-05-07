@@ -3,6 +3,9 @@ import BlogPage from "@/pages/BlogPage";
 export default function Home() {
 
     return (
-        <BlogPage />
+        <>
+            {/* @ts-expect-error Async Server Component */}
+            <BlogPage />
+        </>
     );
 }

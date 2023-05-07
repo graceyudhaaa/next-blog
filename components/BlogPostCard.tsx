@@ -16,7 +16,7 @@ function BlogPostCard(props: BlogPostCardProps) {
       <div className="border border-gray-200 dark:border-chambray-900 flex flex-col grow">
 
         <div className='aspect-video relative'>
-          <Image src={'/Vanilla-Foods-Enhanced-Mod-Thumbnail-.png'} alt='thumbnail' fill style={{ objectFit: "cover" }} />
+          <Image src={props.imgSrc ? props.imgSrc : '/default-thumbnail.jpg'} alt='thumbnail' fill style={{ objectFit: "cover" }} />
         </div>
         <div className='w-full  p-3 flex-grow flex flex-col justify-between'>
           <div className='mb-5 text-chambray-950 dark:text-chambray-50'>

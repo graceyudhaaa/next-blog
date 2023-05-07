@@ -9,6 +9,7 @@ export const getPosts = async (): Promise<Post[]> => {
             _createdAt,
             _updatedAt,
             title,
+            description,
             "slug": slug.current,
             "image": image.asset->url,
             "tags": tags,
