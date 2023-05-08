@@ -28,9 +28,11 @@ async function BlogPage() {
                     </div>
                     <div className="max-w-5xl mx-auto px-3 grid gap-4 text-chambray-950 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 place-items-center">
 
-                        {posts.map((post) => (
-                            <BlogPostCard imgSrc={post.image} title={post.title} key={post._id} desc={post.description} postTag={post.tags} />
-                        ))}
+                        {posts.map((post) => {
+                            return (
+                                <BlogPostCard imgSrc={post.image} title={post.title} key={post._id} desc={post.description} postTag={post.tags} />
+                            )
+                        })}
                     </div>
                 </div>
             </main>

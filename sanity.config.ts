@@ -12,7 +12,8 @@ const config = defineConfig({
     apiVersion: '2023-04-22',
     basePath: '/studio-dashboard',
     plugins: [deskTool(), codeInput(), visionTool()],
-    schema: { types: schemas }
+    schema: { types: schemas },
+    useCdn: true,
 })
 
 export default config
