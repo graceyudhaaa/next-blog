@@ -55,7 +55,7 @@ function Navbar() {
           <Link href='/project' className='group inline-flex justify-center items-center w-full py-3 sm:py-0'><span className="relative inline-block sm:z-10">project <div className="bg-chambray-400 group-hover:w-full w-0 absolute bottom-0.5 h-[10%] z-[-1] transition-all duration-500" /></span></Link>
           <Link href='/about' className='group inline-flex justify-center items-center w-full py-3 sm:py-0'><span className="relative inline-block sm:z-10">about <div className="bg-chambray-400 group-hover:w-full w-0 absolute bottom-0.5 h-[10%] z-[-1] transition-all duration-500" /></span></Link>
         </div>
-        <Button icon={theme === "light" ? <FaSun /> : <FaMoon />}
+        <Button icon={theme === "dark" ? <FaMoon /> : <FaSun />}
           variant="secondary"
           onClick={() => {
             setTheme(theme === 'light' ? 'dark' : 'light')
