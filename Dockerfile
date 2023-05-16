@@ -30,4 +30,4 @@ COPY --from=build /usr/src/app/public ./public
 COPY --from=build /usr/src/app/.next/standalone ./
 COPY --from=build /usr/src/app/.next/static ./.next/static
 
-CMD ['node', 'server.js']
+CMD ["node", "server.js"]
