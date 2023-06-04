@@ -50,12 +50,12 @@ export default function RootLayout({
         <body className='dark:bg-chambray-950'>
           <Providers>
             <Navbar />
-            <div className="max-w-5xl mx-auto">
+            <div className="max-w-5xl mx-auto h-24">
               {children}
-            </div>
             <p className="text-xs flex items-center justify-center dark:text-chambray-50">
               2023 Grace Yudha Satriawan
             </p>
+            </div>
           </Providers>
         </body>
       </html>
