@@ -18,6 +18,10 @@ ENV NODE_ENV production
 
 COPY --from=deps /usr/src/app/node_modules ./node_modules
 COPY . .
+
+ARG NEXT_PUBLIC_SANITY_ID
+ARG NEXT_PUBLIC_SANITY_DATASET
+
 RUN yarn build
 
 # run the app
