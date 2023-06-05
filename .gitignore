@@ -27,6 +27,8 @@ yarn-error.log*
 # local env files
 .env*.local
 .env
+build-local.sh
+build-local.ps1
 
 # vercel
 .vercel
