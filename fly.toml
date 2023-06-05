@@ -11,9 +11,9 @@ processes = []
 
 [build]
 
-[build.args]
-  NEXT_PUBLIC_SANITY_ID=${{ secrets.NEXT_PUBLIC_SANITY_ID }}
-  NEXT_PUBLIC_SANITY_DATASET=${{ secrets.NEXT_PUBLIC_SANITY_DATASET }}
+#[build.args]
+#  NEXT_PUBLIC_SANITY_ID=${{ secrets.NEXT_PUBLIC_SANITY_ID }}
+#  NEXT_PUBLIC_SANITY_DATASET=${{ secrets.NEXT_PUBLIC_SANITY_DATASET }}
 
 [env]
 
