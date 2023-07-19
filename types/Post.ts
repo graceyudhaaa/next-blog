@@ -9,5 +9,6 @@ export type Post = {
     description: string,
     slug: string,
     image: string,
+    image_alt: string,
     content: PortableTextBlock[],
 }

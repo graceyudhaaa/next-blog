@@ -30,7 +30,7 @@ async function BlogPage() {
 
                         {posts.map((post) => {
                             return (
-                                <BlogPostCard imgSrc={post.image} title={post.title} key={post._id} desc={post.description} postTag={post.tags} />
+                                <BlogPostCard imgSrc={post.image} title={post.title} key={post._id} desc={post.description} postTag={post.tags} slug={post.slug} />
                             )
                         })}
                     </div>
